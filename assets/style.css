@@ -1,0 +1,60 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    align-items: center;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+/* Style for button */
+
+img{
+    width: 70px;
+    margin: auto;
+}
+
+button{
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(271.06deg, 
+             rgba(0, 26, 255, 0.75) 
+               3.43%, rgba(0, 0, 0, 0) 99.09%), #6D00C2;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+    animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 
+               0s infinite normal none running pulse;
+}
+
+/* Animation */
+
+button:hover{
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse256 2.3s infinite;
+}
+
+@keyframes pulse256{
+    0%{
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+    70%{
+        box-shadow: 0 0 0 1000px #6D00C2;
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);;
+    }
+}
+
+
